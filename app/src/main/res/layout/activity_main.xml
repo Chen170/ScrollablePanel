@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <Button
+            android:id="@+id/btnLast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="固定最后3列"
+            android:layout_marginStart="8dp"
+            android:onClick="handleFixedColumnByLast"/>
+
+        <Button
+            android:id="@+id/btnLast2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="固定最后3列_plan2"
+            android:layout_marginStart="8dp"
+            android:onClick="handleFixedColumnByLast2"/>
+
+        <Button
+            android:id="@+id/btn5To6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="固定5-6列"
+            android:layout_marginStart="8dp"
+            android:onClick="handleFixedColumn5To6"/>
+
+        <Button
+            android:id="@+id/btnRandom3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="随机固定3列"
+            android:layout_marginStart="8dp"
+            android:onClick="handleFixed3ColumnRandom"/>
+
+    </LinearLayout>
+
+    <com.ldcdev.library.ScrollablePanel
+        android:id="@+id/scrollable_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="52dp"/>
+
+</FrameLayout>
